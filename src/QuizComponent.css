@@ -1,0 +1,204 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    background-color: #f4f6f9; /* light gray full page */
+  }
+  
+  .div-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full screen center */
+  }
+  
+  .div-section {
+    background-color: #ffffff;
+    height: 500px;
+    width: 500px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .div-subsection{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width :12%;
+    height:120%;
+    border-radius: 100%;
+    color: gold;
+  background-color: #001f3f; 
+    margin-right:5%;
+  }
+  
+  h2.heading {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #1e293b; /* dark gray */
+
+    margin :0 auto;
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    background: #e5e7eb; /* soft gray */
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .question {
+    font-size: 1.2rem;
+    color: #111827;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* even spacing between options */
+  }
+  
+  .options {
+    background-color: #f9fafb;
+    border: 3px solid #d1d5db;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .options:hover {
+    background-color: #e0f2fe; /* light blue hover */
+    border-color: #3b82f6;     /* blue border */
+    color: #1e3a8a;            /* navy text */
+  }
+  
+  button {
+    height: 45px;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #3b82f6; /* blue button */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: darkturquoise; /* darker blue */
+    font-size: 1.2rem;
+    transition: 0.1s ease;
+    color:white;
+  }
+  
+  h4 {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6b7280; /* muted gray */
+    margin:0 auto;
+  }
+  .options.correct {
+    background-color: lightgreen;
+    border-color: green;
+  }
+  
+  .options.wrong {
+    background-color: lightcoral;
+    border-color: red;
+  }
+   
+  .options.locked {
+    pointer-events: none; /* Prevents clicking */
+    opacity: 0.7;
+  }
+  
+  .div-section-detail-form{
+    background-color: #ffffff;
+    height: 660px;
+    width: 500px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .result-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+}
+
+.result-section {
+    background-color: #ffffff;
+    padding: 40px 80px; /* This replaces px-20 */
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.result-section h2 {
+    color: #1e293b;
+    font-size: 1.5rem;
+}
+
+.result-section img {
+    border-radius: 8px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px dashed gray;
+  background: #ffffff;
+  color: #3B82F6;;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 6px;
+  gap:1rem; 
+}
+
+.container .one{
+  background-color:green;
+  height:60px;
+  width:60px;
+}
+.container .two{
+  background-color:yellow;
+  height:60px;
+  width:60px;
+}.container .three{
+  background-color:pink;
+  height:60px;
+  width:60px;
+}
